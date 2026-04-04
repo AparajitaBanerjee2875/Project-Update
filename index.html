@@ -1,1 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Research & Project Log</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <div id="updateModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>🚀 New Update for Prof. [Name]!</h2>
+            <p class="date">Latest: April 2026</p>
+            <p>I have completed the data collection phase and updated the main dataset. The initial analysis scripts are now available in the timeline below.</p>
+            <button id="gotItBtn">View the Work</button>
+        </div>
+    </div>
+
+    <header>
+        <h1>My Project Documentation</h1>
+        <p>A continuous log of my research, coding, and project milestones.</p>
+    </header>
+
+    <main>
+        <section class="timeline">
+            <h2>Project Timeline</h2>
+
+            <div class="update-card new-update">
+                <h3>Phase 1 Data Analysis</h3>
+                <span class="date">April 4, 2026</span>
+                <p>Cleaned the raw dataset using Python/Pandas. Removed null values and normalized the input vectors. Generated initial scatter plots to identify outliers.</p>
+                <div class="tags">
+                    <span>Python</span> <span>Data Cleaning</span>
+                </div>
+            </div>
+
+            <div class="update-card">
+                <h3>Literature Review Complete</h3>
+                <span class="date">March 28, 2026</span>
+                <p>Compiled notes from 15 research papers regarding our target algorithm. Created a summary matrix comparing the methodologies.</p>
+                <div class="tags">
+                    <span>Research</span>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
