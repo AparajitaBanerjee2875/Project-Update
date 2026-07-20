@@ -4,13 +4,21 @@ document.addEventListener("DOMContentLoaded", () => {
     const gotItBtn = document.getElementById("gotItBtn");
 
     modal.style.display = "flex";
-    
-    closeBtn.onclick = () => {
-        modal.style.display = "none";
-    };
 
+    // Guard: only attach if a close button actually exists in the markup
+    if (closeBtn) {
+        closeBtn.onclick = () => {
+            modal.style.display = "none";
+        };
+    }
 
     gotItBtn.onclick = () => {
+        // Grab the doc link straight from the modal's own <a> tag,
+        // so it always matches whatever update is shown in the popup.
+        const docLink = modal.querySelector("a");
+        if (docLink && docLink.href) {
+            window.open(docLink.href, "_blank");
+        }
         modal.style.display = "none";
     };
 
