@@ -4,19 +4,24 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #fbf9f4; /* Warm, creamy beige milk background */
-    color: #4a3c31; /* Deep espresso for high contrast readability */
-    
-    /* Cute, ultra-subtle repeating brain doodle background pattern */
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cg fill='none' stroke='%238c6d58' stroke-width='1.2' stroke-opacity='0.07'%3E%3Cpath d='M35 45c-3-4-8-3-10 1-3 5-1 10 2 12-2 3-2 8 1 10 4 3 9 1 11-2 2 3 7 3 11 0 3-2 3-7 1-10 3-2 5-7 2-12-2-4-7-5-10-1z'/%3E%3Cpath d='M32 45c0 4 0 14 0 18'/%3E%3Cpath d='M85 85c-3-4-8-3-10 1-3 5-1 10 2 12-2 3-2 8 1 10 4 3 9 1 11-2 2 3 7 3 11 0 3-2 3-7 1-10 3-2 5-7 2-12-2-4-7-5-10-1z'/%3E%3Cpath d='M82 85c0 4 0 14 0 18'/%3E%3C/g%3E%3C/svg%3E");
+    /* Warm, light beige/cream milk background */
+    background-color: #fbf9f4; 
+    /* Deep espresso brown for high readability and professional contrast */
+    color: #4a3c31; 
+
+    /* Highly Subtle Repeating Brain Doodle Background Pattern */
+    /* This SVG is a simplified, subtle version of the reference character, tiled across the page. */
+    background-image: url("data:image/svg+xml,%3Csvg width='400' height='400' viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- Simplified Line Art Doodle based on reference (image_0.png) --%3E%3Cpath d='M200 40 C140 40 80 100 80 160 S140 280 200 280 S320 220 320 160 S260 40 200 40 Z' fill='none' stroke='%23d2c1b4' stroke-width='1.5' stroke-opacity='0.06' /%3E%3C!-- frilly brain detail (image_0.png) --%3E%3Cpath d='M170 120 L230 120 M160 140 C170 150 180 140 M240 140 C230 150 220 140 M200 160 Q200 170 205 160' stroke='%23d2c1b4' stroke-width='1.5' stroke-opacity='0.06' /%3E%3Ccircle cx='180' cy='135' r='2' fill='%23d2c1b4' fill-opacity='0.06' /%3E%3Ccircle cx='220' cy='135' r='2' fill='%23d2c1b4' fill-opacity='0.06' /%3E%3C!-- smile and detail (image_0.png) --%3E%3Cpath d='M190 155 Q200 160 210 155 M150 165 C160 160 170 165 M250 165 C240 160 230 165' stroke='%23d2c1b4' stroke-width='1.5' stroke-opacity='0.06' /%3E%3C!-- little legs with feet --%3E%3Cpath d='M180 280 L180 300 Q180 305 185 300' stroke='%23d2c1b4' stroke-width='1.5' stroke-opacity='0.06' /%3E%3Cpath d='M220 280 L220 300 Q220 305 225 300' stroke='%23d2c1b4' stroke-width='1.5' stroke-opacity='0.06' /%3E%3C!-- extended hands --%3E%3Cpath d='M100 200 L80 210 Q75 212 80 210' stroke='%23d2c1b4' stroke-width='1.5' stroke-opacity='0.06' /%3E%3Cpath d='M300 200 L320 210 Q325 212 320 210' stroke='%23d2c1b4' stroke-width='1.5' stroke-opacity='0.06' /%3E%3C/svg%3E");
+    background-repeat: repeat;
 }
 
 header {
-    background-color: #5c4738; /* Rich, warm dark chocolate */
-    color: #fbf9f4;
+    /* Rich, warm dark chocolate brown */
+    background-color: #5d4037; 
+    color: #fbf9f4; /* Matches creamy text */
     padding: 3rem 2rem;
     text-align: center;
-    border-bottom: 4px solid #d4bda7;
+    border-bottom: 5px solid #d4bda7; /* Soft taupe accent */
 }
 
 header h1 {
@@ -27,7 +32,8 @@ header h1 {
 }
 
 main {
-    max-width: 750px; /* Slightly narrower for elite readability */
+    /* Max width is maintained for excellent readability on desktop */
+    max-width: 800px;
     margin: 3rem auto;
     padding: 0 1.5rem;
 }
@@ -42,70 +48,72 @@ main {
 .update-card {
     background: #ffffff;
     padding: 1.8rem;
-    border-radius: 16px; /* Smooth, modern rounded corners */
-    box-shadow: 0 8px 24px rgba(92, 71, 56, 0.04); /* Soft, organic shadow */
-    border-left: 6px solid #d4bda7; /* Soft taupe default accent */
+    /* Soft, rounded corners for an inviting look */
+    border-radius: 12px; 
+    /* Extremely subtle shadow for organic separation */
+    box-shadow: 0 6px 18px rgba(92, 71, 56, 0.05); 
+    /* Soft taupe left accent */
+    border-left: 6px solid #bcaaa4; 
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* Hover effect to make browsing feel interactive and alive */
+/* Hover effect on cards makes the entire list feel interactive and polished */
 .update-card:hover {
     transform: translateY(-2px);
-    box-shadow: 0 12px 30px rgba(92, 71, 56, 0.08);
+    box-shadow: 0 10px 25px rgba(92, 71, 56, 0.09);
 }
 
-/* Terracotta/Warm Rust highlights for eye-catching new updates */
 .update-card.new-update {
-    border-left: 6px solid #d97450; 
-    background: linear-gradient(to right, #fffcfb, #ffffff);
+    /* Maintain user's green highlight for function, now as a vibrant accent */
+    border-left: 6px solid #27ae60; 
 }
 
 .update-card h3 {
-    color: #362519;
-    font-size: 1.35rem;
     margin-top: 0;
     margin-bottom: 0.6rem;
+    font-size: 1.3rem;
     font-weight: 700;
+    color: #3e2723; /* Very deep chocolate */
 }
 
 .date {
-    color: #a38f80; /* Elegant, readable muted brown for dates */
+    /* Elegant cocoa-grey for dates, kept bold but subtle for scanning */
+    color: #8d6e63; 
     font-size: 0.85rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
     font-weight: 700;
-    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
     margin-bottom: 0.8rem;
+    display: block;
 }
 
-/* Cozy Pill Badges for instant scanning */
 .tags {
     margin-top: 1rem;
 }
 
 .tags span {
     display: inline-block;
-    background: #f3ede2; /* Creamy oat color */
+    /* Creamy beige-grey background */
+    background: #efebe9; 
     padding: 0.3rem 0.8rem;
-    border-radius: 20px; /* Pill style */
-    font-size: 0.78rem;
+    /* Fully rounded "pill" shape makes tags pop for instant skimmability */
+    border-radius: 20px; 
+    font-size: 0.8rem;
     font-weight: 600;
     margin-right: 0.6rem;
-    color: #8c6d58; /* Warm cocoa text */
+    color: #4e342e; /* Deep cocoa brown text */
     letter-spacing: 0.2px;
 }
 
-/* --- Redesigned Minimalist Modal (Popup) --- */
+/* --- Refined Modern Modal (Popup) Styling --- */
 .modal {
     display: none;
     position: fixed;
     z-index: 1000;
-    left: 0; 
-    top: 0; 
-    width: 100%; 
-    height: 100%;
-    background-color: rgba(54, 37, 25, 0.4); /* Warm toned overlay blur */
-    backdrop-filter: blur(4px); /* Modern frosted-glass effect */
+    left: 0; top: 0; width: 100%; height: 100%;
+    /* Frosted glass effect for a premium feel */
+    background-color: rgba(62, 39, 35, 0.4); 
+    backdrop-filter: blur(5px);
     align-items: center;
     justify-content: center;
 }
@@ -113,31 +121,31 @@ main {
 .modal-content {
     background-color: #ffffff;
     padding: 2.5rem;
-    border-radius: 20px;
+    border-radius: 20px; /* Modern curves */
     width: 90%;
-    max-width: 460px;
+    max-width: 480px;
     position: relative;
-    box-shadow: 0 20px 40px rgba(54, 37, 25, 0.15);
-    border: 1px solid #f3ede2;
+    box-shadow: 0 20px 45px rgba(62, 39, 35, 0.15);
+    border: 1px solid #efebe9;
 }
 
 .close-btn {
     position: absolute;
-    top: 15px; 
-    right: 20px;
+    top: 15px; right: 20px;
     font-size: 1.6rem;
     cursor: pointer;
-    color: #a38f80;
+    color: #8d6e63;
     transition: color 0.2s;
 }
 
 .close-btn:hover { 
-    color: #5c4738; 
+    color: #3e2723; 
 }
 
 #gotItBtn {
-    background-color: #8c6d58; /* Warm milk chocolate primary button */
-    color: white;
+    /* Rich espresso brown main button */
+    background-color: #5d4037; 
+    color: #ffffff;
     border: none; 
     padding: 12px 20px;
     border-radius: 10px; 
@@ -150,7 +158,7 @@ main {
 }
 
 #gotItBtn:hover { 
-    background-color: #735743; 
+    background-color: #4e342e; 
 }
 
 #gotItBtn:active {
